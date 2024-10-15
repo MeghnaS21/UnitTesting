@@ -1,0 +1,15 @@
+Vitest is both test runner and assertion library same as Jest.
+
+Basics of UNIT TESTING FUNDAMENTALS
+  i) Creating unit tests, writing unit tests,
+  ii) AAA-arrange, act and assertion
+  iii) What to test and organizing tests
+
+Unit testing is like, testing the smaller units not the complicated ones.
+Units are basically methods.
+We write units tests to test that particular unit that is functions.
+
+IT is used for BDD
+--reporter verbose results the detailed output.
+
+Why are we testing?
