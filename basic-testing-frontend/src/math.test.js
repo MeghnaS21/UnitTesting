@@ -50,3 +50,21 @@ it('should yield 0 if an empty array is provided', ()=>{
 
     expect(result).toBe(0);
 });
+
+//test-5
+
+it('should throw error if no value is passed into the function', ()=>{
+    const result = ()=>{
+        add();
+    };
+    //agar empty function na likhte toh
+    //ye apne aap call ho jata or error mil jata
+
+    //but hume erro ko catch krne ke liye try catch mei dalna padta action function, haina?
+
+    //lekin taki try catch na likhna pare, hum ise ek empty method mei daal denge
+
+    //taki ye handle krle vitest apne exexcution ke time.
+    //because errors is not returned but thrown
+    expect(result).toThrowError();
+});
