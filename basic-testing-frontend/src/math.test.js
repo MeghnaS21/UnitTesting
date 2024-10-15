@@ -66,7 +66,7 @@ it('should throw error if no value is passed into the function', ()=>{
 
     //taki ye handle krle vitest apne exexcution ke time.
     //because errors is not returned but thrown
-    expect(result).toThrowError();
+    expect(result).toThrow();
 });
 
 //test-6
@@ -78,5 +78,5 @@ it('should throw an error if provided with multiple arguments instead of array',
         add(num1, num2, num3);
     };
 
-    expect(result).toThrowError();
+    expect(result).toThrow(/is not iterable/);
 });
