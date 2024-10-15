@@ -39,3 +39,14 @@ it('should yield a correct sum if an array of numeric string values is provided'
 
     expect(result).toBe(expectedResult);
 });
+
+//test-4
+
+it('should yield 0 if an empty array is provided', ()=>{
+    const number = [];
+    //whatever I am creating here I am passing it to the function
+
+    const result = add(number);
+
+    expect(result).toBe(0);
+});
