@@ -68,3 +68,15 @@ it('should throw error if no value is passed into the function', ()=>{
     //because errors is not returned but thrown
     expect(result).toThrowError();
 });
+
+//test-6
+
+it('should throw an error if provided with multiple arguments instead of array', ()=>{
+    const num1 = 1, num2 = 2, num3 = 3;
+
+    const result = ()=>{
+        add(num1, num2, num3);
+    };
+
+    expect(result).toThrowError();
+});
